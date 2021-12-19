@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Project</title>
+    <link rel="stylesheet" href="site.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  
+</head> 
+<body>
+
+<div class="background">
+
+    <div class="chart">
+
+        <canvas id="myChart"></canvas>
+
+    </div>
+
+    
+    <nav>
+        <div class="container">
+            <h1>Expense Tracker Application</h1>
+    
+            <div class="menu">
+                <a href="#" class="is-active">Home</a>
+
+        
+            </div>
+        
+        
+        <button class="hamburger">
+            <SPAN></SPAN>
+            <SPAN></SPAN>
+            <SPAN></SPAN>
+        </button>
+        </div>
+    </nav>
+    
+    <div class="userForm">
+        <div class="title">Income and Expense Form</div>
+        <div class="content">
+          <form action="#">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Income</span>
+                <input type="text" placeholder="Enter Income (If Any)" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Date</span>
+                <input type="date">
+              </div>
+              <div class="input-box">
+                <span class="details">Choose Expense Category</span>
+                <div class="col-75">
+                    <select id="category" name="category">
+                      <option value="Food">Food</option>
+                      <option value="Clothing">Clothing</option>
+                      <option value="Transportation">Transportation</option>
+                      <option value="Leisure Activities">Leisure activities</option>
+                    </select>
+                  </div>
+              </div>
+              <div class="input-box">
+                <span class="details">Amount Spent</span>
+                <input type="text" placeholder="Enter Amount Spent" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Place Of Expense</span>
+                <input type="text" placeholder="Enter Location Where You Spent" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Amount Left</span>
+                <input type="text" placeholder="Enter Amount Left" required>
+              </div>
+            </div>
+            <div class="Transaction-type">
+              <input type="radio" name="transaction" id="dot-1">
+              <input type="radio" name="transaction" id="dot-2">
+              <span class="transaction-type">Transaction Type</span>
+              <div class="category">
+                <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="transaction">Cash</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="transaction">Card</span>
+              </label>
+              </div>
+            </div>
+            <div class="button">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    
+
+
+</div>
+
+
+
+<script src="validation.js"></script>
+
+
+</body>
+</html>
+
+
+
+
+
